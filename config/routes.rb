@@ -1,5 +1,6 @@
+# frozen_string_literal: true
 Rails.application.routes.draw do
-	resources :visitors, only: [:new, :create]
+  resources :visitors, only: [:new, :create]
   root to: 'visitors#new'
 
   get '/auth/:provider/callback' => 'sessions#create'

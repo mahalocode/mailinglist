@@ -1,9 +1,10 @@
+# frozen_string_literal: true
 class VisitorsController < ApplicationController
   protect_from_forgery except: :create
 
   def new
     @visitor = Visitor.new
-    session[:referrer] ||= request.env["HTTP_REFERER"] || 'none'
+    session[:referrer] ||= request.env['HTTP_REFERER'] || 'none'
     @visitor.referrer ||= session[:referrer] || 'none'
   end
 
@@ -15,5 +16,4 @@ class VisitorsController < ApplicationController
       render :new
     end
   end
-
 end

@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 source 'https://rubygems.org'
 ruby '2.3.0'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
@@ -11,6 +12,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'gibbon'
 gem 'sucker_punch'
 gem 'simple_form', '~> 3.2', '>= 3.2.1'
+gem 'rubocop'
 
 gem 'omniauth'
 gem 'omniauth-twitter'
