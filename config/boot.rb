@@ -3,7 +3,7 @@ ENV['BUNDLE_GEMFILE'] ||= File.expand_path('../Gemfile', __dir__)
 
 require 'bundler/setup' # Set up gems listed in the Gemfile.
 require 'rails/commands/server'
-
+require File.expand_path('../initializers/debug_require', __FILE__)
 module Rails
   class Server
     new_defaults = Module.new do
