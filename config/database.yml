@@ -10,7 +10,7 @@
 # Do not set this db to the same as development or production.
 development:
   adapter: postgresql
-  encoding: unicode
+  encoding: utf8
   database: mailinglist_development
   pool: 5
   username: postgres
@@ -19,7 +19,7 @@ development:
 
 test:
   adapter: postgresql
-  encoding: unicode
+  encoding: utf8
   database: mailinglist_test
   pool: 5
   username: postgres
@@ -29,7 +29,7 @@ test:
 
 production:
   adapter: postgresql
-  encoding: unicode
+  encoding: utf8
   database: mailinglist_production
   pool: 5
   username: postgres
