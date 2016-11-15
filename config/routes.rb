@@ -1,5 +1,9 @@
 # frozen_string_literal: true
 Rails.application.routes.draw do
+  get 'static_pages/home'
+
+  get 'static_pages/help'
+
   resources :visitors, only: [:new, :create]
   root to: 'visitors#new'
 

@@ -14,8 +14,6 @@ gem 'sucker_punch'
 gem 'simple_form', '~> 3.2', '>= 3.2.1'
 gem 'rubocop'
 gem 'pg'
-gem 'thin'
-gem 'unicorn'
 
 gem 'omniauth'
 gem 'omniauth-twitter'
@@ -40,6 +38,7 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'faker'
   gem 'rspec-rails'
+  gem 'pg'
 end
 group :test do
   gem 'capybara'
